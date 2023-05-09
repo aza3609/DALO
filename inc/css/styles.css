@@ -1,0 +1,9 @@
+@import "reset.css";
+@import "variables.css";
+
+/*-----screens-----*/
+@import "main.css";
+
+/*-----components-----*/
+@import "header.css";
+@import "footer.css";
