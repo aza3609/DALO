@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="inc/css/styles.css" />
     <title>DALO-Discovery Across Lunar Observations</title>
     <script
       src="https://kit.fontawesome.com/ee72f6abf8.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/aah3orw.css" />
   </head>
   <body>
     <header>
-      <img class="header__logo" src="img/header_logo-white.svg" alt="logo" />
+      <img
+        class="header__logo"
+        src="img/header_logo-white.svg"
+        onclick="location='index.html'"
+        alt="logo"
+      />
       <nav class="header__nav">
         <a href="about.html">DALO 소개</a>
         <a href="mission-danuri.html">다누리(KPLO)</a>
@@ -22,126 +30,132 @@
       </nav>
       <div class="header__lang">
         <i class="fa-solid fa-globe"></i>
-        <a href="">KR</a> |
-        <a href="">EN</a>
+        <a href="">KR</a>
+        <span>|</span>
+        <a href="" class="light">EN</a>
       </div>
     </header>
-    <main>
+    <main class="main">
       <div class="main-visual">
-        <img class="main-visual__img" src="img/main_dalo.png" alt="moon" />
+        <div class="main-visual__img">
+          <img src="img/main_dalo.png" alt="moon" />
+        </div>
         <div class="main-visual__text">
           <span>DALO</span>
           <span>Discovery Across <br />Lunar Observations</span>
         </div>
         <div class="main-visual__btn">
-          <button class="main-visual__btn-right"></button>
-          <button class="main-visual__btn-left"></button>
+          <button class="main-visual__btn-right">
+            <img src="img/main-visual-arrow-left.svg" alt="" />
+          </button>
+          <button class="main-visual__btn-left">
+            <img src="img/main-visual-arrow-right.svg" alt="" />
+          </button>
         </div>
       </div>
       <section class="main-dalo">
-        <span>DALO</span>
-        <h2>Discovery Across <br />Lunar Observations</h2>
-        <p>
-          다누리는 지난해 12월 27일 달 임무궤도에 진입한 이후, 올해 1월 2일부터
-          2월 3일까지 약 1개월에 걸쳐 시운전을 진행하였다. 시운전운영기간 중,
-          다누리는 달 임무궤도(달 상공 약 100km) 상에서 달 표면을
-          고해상도카메라로 촬영하는데 성공했다. 다누리는 지난해 12월 27일 달
-          임무궤도에 진입한 이후, 올해 1월 2일부터 2월 3일까지 약 1개월에 걸쳐
-          시운전을 진행하였다. 시운전운영기간 중, 다누리는 달 임무궤도(달 상공
-          약 100km) 상에서 달 표면을 고해상도카메라로 촬영하는데 성공했다.
-        </p>
-        <button onclick="location='about.html'">View More</button>
+        <div class="wrap">
+          <span class="main-initials">DALO</span>
+          <h2>Discovery Across <br />Lunar Observations</h2>
+          <p>
+            DALO(Discovery Across Lunar Observations)는 한국천문연구원의 달
+            과학연구 및 탐사를 총칭하는 브랜드입니다. 자체 연구 및 국내·외
+            협력을 통해 달 고유의 특성을 탐구하는 기초과학부터 유인 임무를
+            포함하는 우주탐사까지 두루 살피며 “달로” 향하는 다양한 프로젝트가
+            진행됩니다.
+          </p>
+          <button onclick="location='about.html'">View More</button>
+        </div>
       </section>
       <section class="main-danuri">
-        <span>Danuri(KPLO)</span>
-        <h2>Korea Pathfinder <br />Lunar Orbiter</h2>
-        <p>
-          다누리는 지난해 12월 27일 달 임무궤도에 진입한 이후, 올해 1월 2일부터
-          2월 3일까지 약 1개월에 걸쳐 시운전을 진행하였다. 시운전운영기간 중,
-          다누리는 달 임무궤도(달 상공 약 100km) 상에서 달 표면을
-          고해상도카메라로 촬영하는데 성공했다.
-        </p>
-        <button onclick="location='mission-danuri.html'">View More</button>
-        <div class="payloads">
-          <div class="payloads__item">
-            <h3>PolCam</h3>
-            <span>Wide-Angle Polarimetric Camera</span>
-            <img src="" alt="" />
-          </div>
-          <div class="payloads__item">
-            <h3>PolCam</h3>
-            <span>Wide-Angle Polarimetric Camera</span>
-            <img src="" alt="" />
-          </div>
-          <div class="payloads__item">
-            <h3>PolCam</h3>
-            <span>Wide-Angle Polarimetric Camera</span>
-            <img src="" alt="" />
-          </div>
-          <div class="payloads__item">
-            <h3>PolCam</h3>
-            <span>Wide-Angle Polarimetric Camera</span>
-            <img src="" alt="" />
-          </div>
-          <div class="payloads__item">
-            <h3>PolCam</h3>
-            <span>Wide-Angle Polarimetric Camera</span>
-            <img src="" alt="" />
+        <div class="wrap">
+          <span class="main-initials">Danuri(KPLO)</span>
+          <h2>Korea Pathfinder <br />Lunar Orbiter</h2>
+          <p>
+            우리나라 달 궤도선 다누리(KPLO)는 2022년 8월 5일 발사되었습니다. 달
+            상공 100 ± 30 km 고도의 극궤도를 돌며 약 1년 간 달 탐사에 나섭니다.
+            다누리의 임무는 달 탐사 및 심우주 통신에 필요한 핵심기술을 개발하고
+            달 환경을 과학적으로 조사하며, 새로운 우주 기술을 실험하는 것입니다.
+          </p>
+          <button onclick="location='mission-danuri.html'">View More</button>
+          <div class="payloads">
+            <div class="payloads__item">
+              <h3>PolCam</h3>
+              <img src="img/payload_polcam.png" alt="" />
+              <span>Wide-Angle Polarimetric Camera</span>
+            </div>
+            <div class="payloads__item">
+              <h3>KMAG</h3>
+              <img src="img/payload_kmag.png" alt="" />
+              <span>KPLO MAGnetometer</span>
+            </div>
+            <div class="payloads__item">
+              <h3>LUTI</h3>
+              <img src="img/payload_luti.png" alt="" />
+              <span>Lunar Terrain Imager</span>
+            </div>
+            <div class="payloads__item">
+              <h3>KGRS</h3>
+              <img src="img/payload_kgrs.png" alt="" />
+              <span>KPLO Gamma-Ray Spectrometer</span>
+            </div>
+            <div class="payloads__item">
+              <h3>ShadowCam</h3>
+              <img src="img/payload_shadowcam.png" alt="" />
+              <span></span>
+            </div>
           </div>
         </div>
       </section>
       <section class="main-clps">
-        <span>DALO</span>
-        <h2>Discovery Across <br />Lunar Observations</h2>
-        <p>
-          다누리는 지난해 12월 27일 달 임무궤도에 진입한 이후, 올해 1월 2일부터
-          2월 3일까지 약 1개월에 걸쳐 시운전을 진행하였다. 시운전운영기간 중,
-          다누리는 달 임무궤도(달 상공 약 100km) 상에서 달 표면을
-          고해상도카메라로 촬영하는데 성공했다. 다누리는 지난해 12월 27일 달
-          임무궤도에 진입한 이후, 올해 1월 2일부터 2월 3일까지 약 1개월에 걸쳐
-          시운전을 진행하였다. 시운전운영기간 중, 다누리는 달 임무궤도(달 상공
-          약 100km) 상에서 달 표면을 고해상도카메라로 촬영하는데 성공했다.
-        </p>
-        <button onclick="location='about.html'">View More</button>
-      </section>
-      <section class="main-danuri">
-        <span>CLPS</span>
-        <h2>Commercial Lunar Payload <br />Services</h2>
-        <p>
-          다누리는 지난해 12월 27일 달 임무궤도에 진입한 이후, 올해 1월 2일부터
-          2월 3일까지 약 1개월에 걸쳐 시운전을 진행하였다. 시운전운영기간 중,
-          다누리는 달 임무궤도(달 상공 약 100km) 상에서 달 표면을
-          고해상도카메라로 촬영하는데 성공했다.
-        </p>
-        <button onclick="location='mission-danuri.html'">View More</button>
-        <div class="payloads">
-          <div class="payloads__item">
-            <h3>PolCam</h3>
-            <span>Wide-Angle Polarimetric Camera</span>
-            <img src="" alt="" />
-          </div>
-          <div class="payloads__item">
-            <h3>PolCam</h3>
-            <span>Wide-Angle Polarimetric Camera</span>
-            <img src="" alt="" />
-          </div>
-          <div class="payloads__item">
-            <h3>PolCam</h3>
-            <span>Wide-Angle Polarimetric Camera</span>
-            <img src="" alt="" />
-          </div>
-          <div class="payloads__item">
-            <h3>PolCam</h3>
-            <span>Wide-Angle Polarimetric Camera</span>
-            <img src="" alt="" />
+        <div class="wrap">
+          <span class="main-initials">CLPS</span>
+          <h2>Commercial Lunar Payload <br />Services</h2>
+          <p>
+            한국천문연구원은 NASA의 민간 달 탑재체 서비스(CLPS, Commercial Lunar
+            Payload Services) 계획에 참여할 달 표면 과학탑재체 4종을 국내 대학
+            및 민간 기업과 함께 개발하고 있습니다. 이는 천문연-NASA 간 탐사과학
+            실무 그룹을 기반으로 추진되고 있으며, 과학기술정보통신부에서 <한미
+            민간 달 착륙선 탑재체 공동연구> 사업을 통해 탑재체 개발에서부터 임무
+            운영, 관측자료 분석의 전 과정을 지원합니다.
+          </p>
+          <button onclick="location='mission-danuri.html'">View More</button>
+          <div class="payloads">
+            <div class="payloads__item">
+              <h3>GrainCams</h3>
+              <img src="img/payload_graincams.png" alt="" />
+              <span>Wide-Angle Polarimetric Camera</span>
+            </div>
+            <div class="payloads__item">
+              <h3>LUSEM</h3>
+              <img src="img/payload_lusem.png" alt="" />
+              <span>Lunar Space Environment Monitor</span>
+            </div>
+            <div class="payloads__item">
+              <h3>LVRAD</h3>
+              <img src="img/payload_lvrad.png" alt="" />
+              <span>Lunar Vehicle RAdiation Dosimeters</span>
+            </div>
+            <div class="payloads__item">
+              <h3>LSMAG</h3>
+              <img src="img/payload_lsmag.png" alt="" />
+              <span>Lunar Surface MAGnetometer</span>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      Korea Astronomy and Space Science Institute <br />776, Daedeokdae-ro,
-      Yuseong-gu, Daejeon, Republic of Korea (34055) <br />Copyright 2023 Korea
-      Astronomy and Space Science Institute. All rights reserved.
+      <div class="footer__text">
+        <span class="bold">Korea Astronomy and Space Science Institute</span>
+        <br />776, Daedeokdae-ro, Yuseong-gu, Daejeon, Republic of Korea (34055)
+        <br />Copyright 2023 Korea Astronomy and Space Science Institute. All
+        rights reserved.
+      </div>
+      <img class="footer__logo" src="img/footer_logo.png" alt="" />
     </footer>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
