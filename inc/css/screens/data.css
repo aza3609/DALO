@@ -1,0 +1,10 @@
+.data {
+  height: 100%;
+}
+
+.data p {
+  font-size: 28px;
+  font-weight: 600;
+  opacity: 0.6;
+  text-align: center;
+}

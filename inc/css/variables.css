@@ -1,3 +1,7 @@
 :root {
+  --main-width: 1020px;
   --main-bg-color: #ebeef4;
+  --blue: rgb(65, 142, 210);
+  --orange: rgb(249, 136, 71);
+  --green: rgb(29, 175, 122);
 }

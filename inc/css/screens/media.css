@@ -1,0 +1,133 @@
+.media {
+}
+.media-categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.media-categories__tabs {
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+.media-categories__tabs span {
+  opacity: 0.3;
+  margin: 0px 10px;
+}
+.media-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+.media-item {
+  display: grid;
+  border: 1px solid rgb(210, 210, 210);
+  cursor: pointer;
+}
+.media-item--news {
+  grid-template-rows: 280px 280px;
+}
+.media-item--photo,
+.media-item--video {
+  grid-template-rows: 360px 200px;
+}
+.media-item__img {
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+.media-item__img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+.media-item__img div {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.2;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+}
+.media-item__text {
+  padding: 24px 24px 42px 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.media-item__text p {
+  display: inline-block;
+  font-size: 15px;
+  opacity: 0.8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  height: 4.5em;
+  margin-bottom: 18px;
+}
+.media-item__text span {
+  opacity: 0.5;
+  margin-bottom: 6px;
+}
+.media-item__text a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 44px;
+  box-sizing: border-box;
+  width: 100%;
+  bottom: 30px;
+  position: absolute;
+  font-size: 15px;
+  opacity: 0.7;
+}
+.media-item__text svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+}
+.media-item__category {
+  position: absolute;
+  color: white;
+  padding: 20px 24px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/*-----hover-----*/
+.media-item:hover {
+  transform: translateY(-12px);
+  transition: all 0.4s ease-in-out;
+}
+.media-item:hover .media-item__img img {
+  transform: scale(1.05);
+  transition: all 0.6s ease-in-out;
+}
+/*
+.media-item--news .media-item__category {
+  color: rgb(65, 142, 210);
+}
+.media-item--photo .media-item__category {
+  color: rgb(237, 129, 68);
+}
+.media-item--video .media-item__category {
+  color: rgb(29, 175, 122);
+}*/
+
+/*------media-detail-page------*/
+.media-detail section .wrap,
+.media-detail section .img-wrap {
+  width: 920px;
+}
+.media-detail .content-header__img {
+  background-color: black;
+}
+.media-detail .content-header__img img {
+  opacity: 0.7;
+}
+.media-detail .content-header__img {
+  height: 480px;
+}

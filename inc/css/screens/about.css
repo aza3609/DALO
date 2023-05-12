@@ -1,5 +1,17 @@
-.about p {
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 20px;
+.about {
+  height: 100%;
+}
+.about-dalo .wrap {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  column-gap: 40px;
+}
+.about-dalo img {
+  width: 100%;
+  grid-area: 1/2/3/3;
+}
+.about-dalo p {
+  font-size: 20px;
+  font-weight: 400;
+  align-content: flex-start;
 }

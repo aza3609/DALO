@@ -29,12 +29,12 @@
 .main-visual__text span:first-child {
   font-size: 34px;
   margin-bottom: 16px;
-  color: #287ebf;
+  color: var(--blue);
 }
 .main-visual__text span:last-child {
-  font-size: 86px;
+  font-size: 88px;
   line-height: 1.3;
-  font-family: "din-2014-narrow";
+  font-family: "urw-din-semi-condensed";
   font-weight: 600;
 }
 .main-visual__btn button {
@@ -48,35 +48,58 @@
   font-size: 26px;
 }
 .main-dalo .main-initials {
-  color: #287ebf;
+  color: var(--blue);
+}
+.main-dalo button:hover {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  color: white;
 }
 .main-danuri {
   background-color: var(--main-bg-color);
 }
 .main-danuri .main-initials {
-  color: #ed8144;
+  color: var(--orange);
+}
+.main-danuri button:hover {
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  color: white;
 }
 .main-clps .main-initials {
-  color: #1daf7a;
+  color: var(--green);
+}
+.main-clps button:hover {
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  color: white;
 }
 .main p {
-  font-size: 17px;
+  font-size: 18px;
   margin-bottom: 32px;
 }
+.main h3 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
 .payloads {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 34px;
   margin-top: 60px;
 }
 .payloads__item {
   display: grid;
-  height: 220px;
-  grid-template-columns: 1fr 1.2fr;
-  grid-template-rows: 1fr 2.2fr;
+  height: 200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  column-gap: 12px;
   padding: 18px 22px;
   box-sizing: border-box;
   background-color: var(--main-bg-color);
+  cursor: pointer;
+}
+.payloads__item:hover {
+  transform: translateY(-8px);
+  transition: all 0.4s ease-in-out;
 }
 .main-danuri .payloads__item {
   background-color: white;

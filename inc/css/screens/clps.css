@@ -1,0 +1,19 @@
+.columns-logo {
+  display: grid;
+  grid-template-columns: 2.4fr 1fr;
+  column-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.graincams .columns-logo img {
+  width: 100%;
+}
+.about-lusem .columns-logo img {
+  width: 75%;
+}
+.about-lvrad .columns-logo img {
+  width: 75%;
+}
+.about-lsmag .columns-logo img {
+  width: 75%;
+}

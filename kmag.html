@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="inc/css/styles.css" />
+    <title>DALO-Discovery Across Lunar Observations</title>
+    <!------icon------>
+    <script
+      src="https://kit.fontawesome.com/ee72f6abf8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!------font------>
+    <link rel="stylesheet" href="https://use.typekit.net/aah3orw.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="header__logo"
+        src="img/header_logo-white.svg"
+        onclick="location='index.html'"
+        alt="logo"
+      />
+      <nav class="header__nav">
+        <a href="about.html">DALO 소개</a>
+        <a href="mission-danuri.html">다누리(KPLO)</a>
+        <a href="mission-clps.html">CLPS</a>
+        <a href="data.html">데이터</a>
+        <a href="media.html">미디어</a>
+      </nav>
+      <div class="header__lang">
+        <i class="fa-solid fa-globe"></i>
+        <a href="">KR</a>
+        <span>|</span>
+        <a href="" class="light">EN</a>
+      </div>
+    </header>
+
+    <main class="kmag">
+      <div class="content-header">
+        <div class="content-header__img">
+          <img src="img/content-header_img.png" alt="" />
+          <h1>KMAG</h1>
+        </div>
+        <div class="content-header__nav">
+          <div class="wrap">
+            <span class="content-header__1-depth">다누리(KPLO)</span>
+            <div class="content-header__2-depth">
+              <a href="mission-danuri.html">미션</a>
+              <a href="polcam.html">PolCam</a>
+              <a class="black">KMAG</a>
+              <a href="luti.html">LUTI</a>
+              <a href="kgrs.html">KGRS</a>
+              <a href="shadowcam.html">ShadowCam</a>
+            </div>
+          </div>
+        </div>
+        <div class="content-header__breadcrumb">
+          <a href="index.html"><i class="fa-solid fa-house"></i></a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a href="mission-danuri.html">다누리(KPLO)</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a>KMAG</a>
+        </div>
+      </div>
+      <section class="polcam">
+        <div class="wrap">
+          <h3>KMAG</h3>
+
+          <p>
+            다누리호에 탑재된 자기장 측정기[KMAG(케이매그), KPLO MAGnetometer]는
+            경희대학교에서 개발하였으며, 달 주변 자기장을 관측합니다. 달의
+            자기장은 특이하게 표면에만 국소적으로 존재하며, 이를 자기이상이라고
+            합니다. 태양계에서 자기이상의 기원은 아직 풀리지 않는 난제이며,
+            KMAG는 달 자기이상의 기원을 풀기 위한 관측을 수행합니다.<br /><br />자기장
+            측정기는 국내 독자기술로 만들어졌습니다. 기기는 크게 붐 구조물을
+            가지고 있는 센서부와 전장박스로 구성되어 있으며, 무게는 약 3.5
+            kg입니다. 센서부에는 1.2 m 길이의 붐과 전개 구조물로 구성되어 있고,
+            0.2 nT 분해능의 자기장을 10 Hz 수집 주기로 측정하는 3개의 센서가 붐
+            내부에 삽입되어 있습니다.<br /><br />자기장 측정기에 붐 구조물이
+            사용된 이유는, 위성에서 발생하는 자기장 간섭을 최소화하기
+            위함입니다. 관측 임무 시작 시, 접혀 있던 붐은 135도로 전개되며, 붐에
+            장착된 3개의 자기 센서는 멀티 센싱 기법을 통해 위성의 자기간섭을
+            분별하여 보상할 수 있게 됩니다.<br /><br />다누리호 발사 후 약 3시간
+            뒤, KMAG는 성공적으로 붐을 전개했으며, 과학 탑재체 중에서는 가장
+            먼저 관측을 시작했습니다. KMAG는 다누리 임무 기간동안 지속적으로
+            과학 자료를 수집합니다. 이는 달의 자기장과 우주환경 연구에 활용될
+            예정입니다.
+          </p>
+          <div class="division"></div>
+          <div class="img-wrap column-1">
+            <img class="img-80" src="img/kmag_kmag.png" alt="" />
+            <span class="caption"
+              >다누리 자기장 측정기 (항우연/경희대 제공)</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__text">
+        <span class="bold">Korea Astronomy and Space Science Institute</span>
+        <br />776, Daedeokdae-ro, Yuseong-gu, Daejeon, Republic of Korea (34055)
+        <br />Copyright 2023 Korea Astronomy and Space Science Institute. All
+        rights reserved.
+      </div>
+      <img class="footer__logo" src="img/footer_logo.png" alt="" />
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

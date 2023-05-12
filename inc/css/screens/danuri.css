@@ -1,0 +1,15 @@
+/*-----misson-danuri-----*/
+.mission .wrap {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  column-gap: 40px;
+}
+.mission img {
+  width: 100%;
+  grid-area: 1/2/3/3;
+}
+.mission p {
+  font-size: 18px;
+  font-weight: 400;
+}
+/*-----polcam-----*/

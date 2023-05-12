@@ -1,17 +1,23 @@
 @import "reset.css";
 @import "variables.css";
+@import "common.css";
 
 /*-----screens-----*/
 @import "screens/main.css";
 @import "screens/about.css";
+@import "screens/danuri.css";
+@import "screens/clps.css";
+@import "screens/data.css";
+@import "screens/media.css";
 
 /*-----components-----*/
 @import "components/header.css";
 @import "components/footer.css";
+@import "components/sub-pages.css";
 
 /*-----font-----*/
 @font-face {
-  font-family: "din-2014", sans-serif;
+  font-family: "urw-din", sans-serif;
   src: url("https://use.typekit.net/aah3orw.css");
   unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
@@ -19,68 +25,4 @@
   font-family: "Noto Sans KR", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
   unicode-range: U+AC00-D7A3;
-}
-
-* {
-  font-family: "din-2014", "Noto Sans KR";
-}
-body {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-section .wrap {
-  width: 1080px;
-  margin: 100px 0px;
-}
-
-/*-----text-style-----*/
-p {
-  font-family: "Noto Sans KR";
-  word-break: keep-all;
-  font-size: 17px;
-}
-h1 {
-  font-size: 50px;
-  font-weight: 600;
-}
-h2 {
-  font-size: 42px;
-  font-weight: 600;
-  line-height: 1.3;
-  margin-bottom: 30px;
-}
-h3 {
-  font-size: 32px;
-  font-weight: 700;
-}
-.light {
-  opacity: 0.5;
-}
-.regular {
-  font-weight: 500;
-}
-.bold {
-  font-weight: 700;
-}
-
-/*-----button-----*/
-button {
-  padding: 12px 40px;
-  border: 1px black solid;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: 15px;
 }
